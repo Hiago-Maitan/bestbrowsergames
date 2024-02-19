@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #202327;
+  font-family: "Ubuntu", sans-serif;
+}
+
+header {
+  height: 10vh;
+  width: 100%;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.container {
+  padding: 0 2.5rem;
+}
+
+.container .form-title {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.container .form-title span {
+  color: #a81f1f;
+  font-size: 0.8rem;
+
+  display: flex;
+  align-items: center;
+}
+
+.container .form-title h2 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #ffffff;
+
+  margin-bottom: 3.7rem;
+}
+
+.container form {
+  margin: 0 auto;
+  max-width: 24rem;
+}
+
+.container form input {
+  width: 24rem;
+  padding: 0.8rem 1rem;
+
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 0.2rem;
+  background-color: #373a3e;
+
+  margin-bottom: 1.8rem;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.container form input:hover,
+.container form input:focus {
+  border: 1px solid #7e2121;
+  outline: 0;
+}
+
+.container form input::placeholder{
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.container form .input-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.container form .input-container input {
+  width: 10rem;
+}
+
+.container form button {
+  width: 24rem;
+  background-color: #7e2121c7;
+  border: none;
+  border-radius: 0.2rem;
+  padding: 1rem 0;
+  text-align: center;
+
+  color: rgba(255, 255, 255, 0.7);
+  cursor: pointer;
+}
+
+.container form button:hover {
+  background-color: #7e2121;
+  transition: 0.3s;
+}
+
+.container form .form-text {
+  margin-top: 2rem;
+  text-align: center;
+
+  font-size: 1rem;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.container form .form-text h5{
+  margin-bottom: 0.6rem;
+}
+
+.container form .form-text span {
+  color: #A81F1F;
+}
