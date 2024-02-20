@@ -17,6 +17,7 @@ header {
 
 .container {
   padding: 0 2.5rem;
+  margin-bottom: 2rem;
 }
 
 .container .form-title {
@@ -47,7 +48,8 @@ header {
   max-width: 24rem;
 }
 
-.container form input {
+.container form input,
+.container form textarea {
   width: 24rem;
   padding: 0.8rem 1rem;
 
@@ -60,12 +62,14 @@ header {
 }
 
 .container form input:hover,
-.container form input:focus {
+.container form input:focus,
+.container form textarea:hover,
+.container form textarea:focus {
   border: 1px solid #7e2121;
   outline: 0;
 }
 
-.container form input::placeholder{
+.container form input::placeholder {
   color: rgba(255, 255, 255, 0.3);
 }
 
@@ -104,10 +108,10 @@ header {
   color: #ffffff;
 }
 
-.container form .form-text h5{
+.container form .form-text h5 {
   margin-bottom: 0.6rem;
 }
 
 .container form .form-text span {
-  color: #A81F1F;
+  color: #a81f1f;
 }

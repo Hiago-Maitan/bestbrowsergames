@@ -1,6 +1,7 @@
 import './App.css'
-import Form from './components/Form/Form';
+import FormUser from './components/Form/FormUser';
 import FormTitle from './components/Form/FormTitle';
+import FormGames from './components/Form/FormGames';
 // maxtcastro@gmail.com
 function App() {
 
@@ -16,8 +17,10 @@ function App() {
         </nav>
       </header>
     <div className='container'>
-      <FormTitle title={"Faça seu Cadastro"}/>
-      <Form/>
+      {/* <FormTitle title={"Faça seu Cadastro"}/> */}
+      {/* <FormUser/> */}
+      
+       <FormGames/>
     </div>
     </>
   )
