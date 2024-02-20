@@ -43,13 +43,13 @@ header {
   margin-bottom: 3.7rem;
 }
 
-.container form {
+form {
   margin: 0 auto;
   max-width: 24rem;
 }
 
-.container form input,
-.container form textarea {
+form input,
+form textarea {
   width: 24rem;
   padding: 0.8rem 1rem;
 
@@ -61,28 +61,28 @@ header {
   color: rgba(255, 255, 255, 0.9);
 }
 
-.container form input:hover,
-.container form input:focus,
-.container form textarea:hover,
-.container form textarea:focus {
+form input:hover,
+form input:focus,
+form textarea:hover,
+form textarea:focus {
   border: 1px solid #7e2121;
   outline: 0;
 }
 
-.container form input::placeholder {
+form input::placeholder {
   color: rgba(255, 255, 255, 0.3);
 }
 
-.container form .input-container {
+form .input-container {
   display: flex;
   justify-content: space-between;
 }
 
-.container form .input-container input {
+form .input-container input {
   width: 10rem;
 }
 
-.container form button {
+form button {
   width: 24rem;
   background-color: #7e2121c7;
   border: none;
@@ -94,12 +94,12 @@ header {
   cursor: pointer;
 }
 
-.container form button:hover {
+form button:hover {
   background-color: #7e2121;
   transition: 0.3s;
 }
 
-.container form .form-text {
+form .form-text {
   margin-top: 2rem;
   text-align: center;
 
@@ -108,10 +108,67 @@ header {
   color: #ffffff;
 }
 
-.container form .form-text h5 {
+form .form-text h5 {
   margin-bottom: 0.6rem;
+  font-weight: 400;
 }
 
-.container form .form-text span {
+form .form-text span {
   color: #a81f1f;
 }
+
+/* Modal */
+
+.modal-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.line {
+  margin: 0 auto;
+  margin-bottom: 2.5rem;
+  width: 20rem;
+  border: 0.5px solid rgba(255, 255, 255, 0.3);
+}
+
+.modal-title {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  margin-bottom: 2rem;
+}
+
+.modal-title h4 {
+  font-weight: 400;
+}
+
+.modal-title span {
+  font-weight: 600;
+}
+
+.modal-overlay {
+  background-color: rgba(217, 217, 217, 0.1);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-content {
+  max-width: 30rem;
+  max-height: 28rem;
+  background-color: #202327;
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+/* .modal-content form {
+  margin: 1rem 0;
+} */

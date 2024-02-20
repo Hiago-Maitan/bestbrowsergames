@@ -5,7 +5,7 @@ import Input from "./Input";
 function Form() {
   return ( 
     <form>
-        <Input type="text" placeholder={"exemplo@email.com"} />
+        <Input type="email" placeholder={"exemplo@email.com"} />
         <Input type="password" placeholder={"Senha"} />
         <Input type="date" style={{color: 'rgba(255, 255, 255, 0.3)'}}/>
 
