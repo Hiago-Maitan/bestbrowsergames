@@ -1,10 +1,14 @@
+import Navbar from '../Navbar/';
 import FormTitle from "./FormTitle";
 import Input from "./Input";
 import Button from "../Button/Button";
+import Footer from '../Footer';
 
 function FormGames() {
   return ( 
-  <>
+    <>
+    <Navbar/>
+    <div className="container">
     <FormTitle title={"Cadastrar games"}/>
     <form>
         <Input type="text" placeholder={"nome do game"} />
@@ -21,6 +25,8 @@ function FormGames() {
 
         <Button type={"submit"} title={"Cadastrar"}/>
       </form>
+      </div>
+      <Footer/>
     </>
    );
 }

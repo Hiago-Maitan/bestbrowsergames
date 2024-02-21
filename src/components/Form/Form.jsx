@@ -1,9 +1,16 @@
 import Button from "../Button/Button";
+import Navbar from "../Navbar";
 import FormText from "./FormText";
 import Input from "./Input";
+import FormTitle from "./FormTitle";
+import Footer from "../Footer";
 
 function Form() {
   return ( 
+    <>
+    <Navbar/>
+    <div className="container">
+      <FormTitle title={"Faça seu cadastro"}/>
     <form>
         <Input type="text" placeholder={"exemplo@email.com"} />
         <Input type="password" placeholder={"Senha"} />
@@ -14,12 +21,10 @@ function Form() {
           <Input type="text" placeholder={"País"} />
         </div>
         <Button type={"submit"} title={"Entrar"}/>
-
-        <FormText 
-        firstText={"Já possui conta?"} 
-        redText={"Clique aqui"}
-        lastText={"para entrar"}/>
       </form>
+      </div>
+      <Footer/>
+      </>
    );
 }
 
