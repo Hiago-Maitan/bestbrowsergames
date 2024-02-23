@@ -9,7 +9,7 @@ import Modal from 'react-modal';
 import { useState } from 'react';
 
 const HomePage = () => {
-  const [modalIsOpen, setIsOpen] = useState(false)
+  const [modalIsOpen, setIsOpen] = useState(false);
 
   function openModal(){
     setIsOpen(true);
