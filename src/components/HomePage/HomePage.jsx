@@ -11,48 +11,48 @@ import { useState } from 'react';
 const HomePage = () => {
   const [modalIsOpen, setIsOpen] = useState(false);
 
-  function openModal(){
+  function openModal() {
     setIsOpen(true);
   }
 
-  function closeModal(){
+  function closeModal() {
     setIsOpen(false);
   }
 
   return (
     <div className='container-catalogo'>
 
-     {/* Modal */}
-    <div className="modal-container">
-       <Modal
-       isOpen={modalIsOpen}
-       contentLabel={"Example Modal"}
-       overlayClassName={"modal-overlay"}
-       className="modal-content"
-      >
-      <div className='modal-title'>
-        <h4>Faça <span>Login</span></h4>
-        <h4>ou <span>Cadastre-se</span></h4>
+      {/* Modal */}
+      <div className="modal-container">
+        <Modal
+          isOpen={modalIsOpen}
+          contentLabel={"Example Modal"}
+          overlayClassName={"modal-overlay"}
+          className="modal-content"
+        >
+          <div className='modal-title'>
+            <h4>Faça <span>Login</span></h4>
+            <h4>ou <span>Cadastre-se</span></h4>
+          </div>
+          <div className="line"></div>
+          <form>
+            <Input type={"email"} placeholder={"E-mail"} />
+            <Input type={"password"} placeholder={"Senha"} />
+
+            <div className='input-container'>
+              <Button type={"button"} title={"Cancelar"} width={160} onclick={closeModal} />
+              <Button type={"submit"} title={"Entrar"} width={160} />
+            </div>
+
+            <FormText firstText={"Não possui conta?"} redText={"Clique aqui"}
+              lastText={"para se cadastrar"} />
+          </form>
+        </Modal>
       </div>
-      <div className="line"></div>
-      <form>
-      <Input type={"email"} placeholder={"E-mail"}/>
-      <Input type={"password"} placeholder={"Senha"}/>
+      {/* Fim do modal */}
 
-      <div className='input-container'>
-          <Button type={"button"} title={"Cancelar"} width={160} onclick={closeModal}/>
-          <Button type={"submit"} title={"Entrar"} width={160}/>
-      </div>
-
-      <FormText firstText={"Não possui conta?"} redText={"Clique aqui"} 
-      lastText={"para se cadastrar"}/>
-     </form>
-    </Modal>
-  </div>
-  {/* Fim do modal */}
-
-       {/* Navbar */}
-       <Navbar onclick={openModal}/>
+      {/* Navbar */}
+      <Navbar onclick={openModal} />
       <main>
         <section className="content">
           <h1>BestBrowserGames</h1>
@@ -103,15 +103,14 @@ const HomePage = () => {
               </figure>
             </article>
           </section>
-
         </div>
         <section className='catalog'>
           <h4><a href={`/games`}>ver catalogo</a></h4>
         </section>
       </main>
-      <Footer/>
+      <Footer />
     </div>
-    
+
   );
 };
 
