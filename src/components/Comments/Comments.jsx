@@ -3,7 +3,7 @@ import Navbar from '../Navbar/index';
 import Input from "../Form/Input.jsx";
 import Button from "../Button/Button.jsx";
 import Footer from '../Footer/index.jsx';
-import StarRating from '../StarRating/index';
+
 
 const Comments = () => {
     const [comments, setComments] = useState([]);

@@ -68,7 +68,9 @@ const Catalogo = () => {
           <section className="popular-games">
             <article className="cardGame">
               <figure >
-                <img src="/valorant.png" alt="" />
+              <Link to="/comments">
+                  <img src="/valorant.png" alt="" />
+                </Link>
                 <figcaption className="descricao">
                   <h3>Valorant</h3>
                   <h5>FPS</h5>
@@ -81,7 +83,9 @@ const Catalogo = () => {
           <section className="popular-games">
             <article className="cardGame">
               <figure >
-              <a href={`/`}><img src="/wow.png" alt=""  /></a>
+              <Link to="/comments">
+                  <img src="/wow.png" alt="" />
+                </Link>
                
                 <figcaption className="descricao">
                   <h3>World of Warcraft</h3>
@@ -95,7 +99,9 @@ const Catalogo = () => {
           <section className="popular-games">
             <article className="cardGame">
               <figure >
-                <img src="/fifa.jpg" alt="" />
+              <Link to="/comments">
+              <img src="/fifa.jpg" alt="" />
+                </Link>
                 <figcaption className="descricao">
                   <h3>Fifa 21</h3>
                   <h5>sports</h5>

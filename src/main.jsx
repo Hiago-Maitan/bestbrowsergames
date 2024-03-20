@@ -8,6 +8,7 @@ import Catalogo from './components/Catalogo/Catalogo.jsx';
 import Form from './components/Form/Form.jsx';
 import FormGames from './components/Form/FormGames.jsx';
 import Comments from './components/Comments/Comments.jsx';
+import Carrinho from './components/Carrinho/Carrinho.jsx';
 
 const router = createBrowserRouter([
   {
@@ -30,6 +31,10 @@ const router = createBrowserRouter([
     path: "/Comments",
     element: <Comments/>
   },
+   {
+     path: "/Carrinho",
+     element: <Carrinho/>
+   },
 ])
 
 ReactDOM.createRoot(document.getElementById('root')).render(

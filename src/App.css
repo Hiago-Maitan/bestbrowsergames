@@ -69,6 +69,13 @@ nav a {
   height: 13px;
 }
 
+#compraImg {
+  width: 16px;
+  height: 16px;
+  transform: scaleX(-1);
+ 
+}
+
 .content {
   display: flex;
   flex-direction: column;
@@ -174,8 +181,9 @@ main h5 {
   gap: 10px;
 }
 .search {
-  margin-top: 20px;
-  margin-bottom: 40px;
+  padding: 20px;
+  width: 500px;
+  
 }
 
 .search form {
@@ -527,4 +535,105 @@ margin-left: 44px;
   margin: 0; 
   font-size: 16px;
   font-weight: 700;
+}
+
+
+.carrinhoDescricao{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.qntd{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.qntd button{
+  width: 20px;
+
+  
+}
+.qntd input{
+  width: 30px;
+  
+}
+
+.subtotal button{
+  width: 15px;
+  margin-left: 15px;
+  
+}
+
+.itemDescricao{
+  display: flex;
+  justify-content: space-between;
+  width: 180px;
+  
+}
+
+
+.frete-options{
+  width: 400px;
+  border: 1px solid red;
+}
+
+
+.opçoes{
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  width: 400px;
+  margin-left: 20px;
+  color: #FFFFFF;
+
+}
+
+.opcao1{
+  display: flex;
+  justify-content: space-between;
+  width: 400px;
+  margin-left: 15px;
+  margin-top: 15px;
+  color: #FFFFFF;
+}
+
+
+
+.opcao2{
+  display: flex;
+  justify-content: space-between;
+  width: 400px;
+  margin-left: 15px;
+  margin-top: 15px;
+  color: #FFFFFF;
+}
+.container-frete-subtotal{
+  display: flex;
+  justify-content: space-around;
+}
+.container-Subtotal{
+ 
+  width: 300px;
+}
+.sub{
+  display:flex;
+  justify-content: space-between;
+  margin-top: 40px;
+  
+}
+.fret{
+  display:flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+.total{
+  display:flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+.container-button{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
 }

@@ -16,6 +16,10 @@ function Navar({onclick}) {
               <img src="/usuario.png" alt="" id='loginImg' />
               <a href="#" onClick={onclick}>LOGIN</a>
             </li>
+            <li>
+            <img src="/carrinho.png" alt="" id='compraImg' />
+              <a href={`/Carrinho`}>CARRINHO</a>
+            </li>
           </ul>
         </nav>
       </header>
